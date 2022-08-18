@@ -1,6 +1,6 @@
 # React Music App
 
-This music app is built with React, React Hooks, and Sass
+A music app built with React, React Hooks, and Sass
 
 ## Available Scripts
 
