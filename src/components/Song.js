@@ -4,7 +4,7 @@ const Song = () => {
   return (
     <div className="song-container">
       <h1>Pic</h1>
-      <p>Song Name</p>
+      <h1>Song Name</h1>
     </div>
   );
 };
