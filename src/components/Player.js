@@ -6,12 +6,18 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useRef } from "react";
 
-const Player = ({ currentSong }) => {
+const Player = ({ currentSong, isPlaying, setIsPlaying }) => {
   // Ref
   const audioRef = useRef(null);
   // Event Handlers
   const playSongHandler = () => {
-    audioRef.current.play();
+    if (isPlaying) {
+      setIsPlaying(!isPlaying);
+      audioRef.current.pause();
+    } else {
+      setIsPlaying(!isPlaying);
+      audioRef.current.play();
+    }
   };
 
   return (
